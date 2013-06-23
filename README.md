@@ -1,6 +1,6 @@
 # Sirius
 
-TODO: Write a gem description
+Wrap 2ch.hk api
 
 ## Installation
 
@@ -18,7 +18,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+```ruby
+Sirius::PR::pages #=> Return all threads from wakaba page
+Sirius::PR::pages(2) #=> Return all threads from 2nd page
+Sirius::PR::thread(1) #=> Return all posts from thread num 1.
+Sirius::PR::pages #=> (20) Return page count
+Sirius::pages('pr', 1) #=> Return all threads from wakaba page
+Sirius::thread('pr', 1) #=> Return all posts from thread num 1.
+Sirius::pages('pr') #=> Return page count
+
+Sirius::PR::pages.first.load #=> Load all posts from 1st thread
+
+#For more information => read code.
+```
+
+## TODO
+ 
+    $ grep -r "TODO"
+
 
 ## Contributing
 
